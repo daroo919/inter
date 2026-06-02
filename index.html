@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interstellar</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* 블랙홀 영상 */
+#bg-video{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    z-index:-2;
+}
+
+/* 어둡게 */
+.overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.55);
+    z-index:-1;
+}
+
+/* 내용 */
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:60px 20px;
+}
+
+h1{
+    text-align:center;
+    font-family:'Orbitron',sans-serif;
+    font-size:4rem;
+    letter-spacing:10px;
+    margin-bottom:50px;
+
+    text-shadow:
+    0 0 10px white,
+    0 0 20px white;
+}
+
+.section{
+    margin-bottom:30px;
+
+    background:rgba(0,0,0,0.45);
+
+    backdrop-filter:blur(10px);
+
+    border:1px solid rgba(255,255,255,0.15);
+
+    border-radius:16px;
+
+    padding:30px;
+
+    line-height:1.9;
+
+    font-size:1.15rem;
+}
+
+.section:hover{
+    transform:translateY(-3px);
+    transition:0.3s;
+}
+
+h2{
+    margin-bottom:15px;
+}
+
+iframe{
+    width:100%;
+    aspect-ratio:16/9;
+    border:none;
+    border-radius:12px;
+}
+
+footer{
+    text-align:center;
+    margin-top:40px;
+    opacity:0.7;
+}
+
+</style>
+</head>
+<body>
+
+<video id="bg-video" autoplay muted loop playsinline>
+    <source src="blackhole.mp4" type="video/mp4">
+</video>
+
+<div class="overlay"></div>
+
+<div class="container">
+
+<h1>INTERSTELLAR</h1>
+
+<div class="section">
+<p>
+Interstellar is a science fiction movie directed by Christopher Nolan and released in 2014.
+The movie stars Matthew McConaughey, Anne Hathaway, Jessica Chastain, and Michael Caine.
+It combines science, adventure, and emotional storytelling to create a unique experience.
+</p>
+</div>
+
+<div class="section">
+<p>
+The story follows Cooper, a former NASA pilot who now works as a farmer on Earth.
+Dust storms and crop diseases are making the planet increasingly difficult to live on.
+After discovering a secret NASA facility, Cooper learns that humanity needs a new home.
+He joins a mission through a wormhole near Saturn to search for habitable planets.
+</p>
+</div>
+
+<div class="section">
+<p>
+During the journey, the crew visits dangerous worlds and experiences the effects of time dilation.
+On one planet, a few hours for them equal many years on Earth.
+Cooper realizes he has missed much of his children's lives.
+Eventually, he sacrifices himself and enters a mysterious structure connected to a black hole,
+where he finds a way to send information to his daughter Murph across time.
+</p>
+</div>
+
+<div class="section">
+<p>
+Murph, now a scientist, uses the information to solve a problem that allows humanity to leave Earth
+and survive in space colonies.
+In the end, Cooper reunites with his elderly daughter before setting off to find Amelia Brand.
+</p>
+</div>
+
+<div class="section">
+<p>
+I think Interstellar is one of the greatest science fiction movies ever made.
+The movie successfully combines science with a touching story about family,
+especially the relationship between Cooper and Murph.
+The visual effects are stunning, and the black hole and planets feel realistic.
+Hans Zimmer's soundtrack is also excellent and makes many scenes more emotional.
+</p>
+</div>
+
+<div class="section">
+<p>
+The film explores important themes such as humanity's future,
+exploration, love, and sacrifice.
+Although some scientific ideas can be difficult to understand and the movie is quite long,
+its strengths greatly outweigh its weaknesses.
+</p>
+</div>
+
+<div class="section">
+<p>
+Overall, Interstellar is an outstanding film with an emotional story,
+impressive visuals, and meaningful themes.
+I would rate it 9.5 out of 10 and highly recommend it to anyone who enjoys science fiction and space exploration.
+</p>
+</div>
+
+<div class="section">
+<h2>Video</h2>
+
+<iframe
+src="https://www.youtube.com/embed/zSWdZVtXT7E"
+title="Interstellar Trailer"
+allowfullscreen>
+</iframe>
+
+</div>
+
+<footer>
+Interstellar Presentation
+</footer>
+
+</div>
+
+</body>
+</html>
